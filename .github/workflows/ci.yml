@@ -1,0 +1,14 @@
+#workflow name
+name: CoderCo CICD Workflow
+
+#first condition
+on: [push]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code 
+        uses: actions/checkout@v2
+      - name: We are testing this workflow
+        run: echo Hello Everyone!  
